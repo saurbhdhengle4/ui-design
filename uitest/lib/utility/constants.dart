@@ -11,7 +11,8 @@ class Sizes {
 class UIC {
   static Color text1 = Colors.black87;
   static Color text2 = Colors.black54; //const Color(0XFFB6B6B6);
-
+  static Color background = const Color(0xFFF3F8FE);
+  static Color button = const Color(0xFF3E4685);
   static Color white = const Color(0XFFFEFEFE);
 
   static final Color randomColor =
