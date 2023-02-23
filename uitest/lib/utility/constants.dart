@@ -3,23 +3,23 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Sizes {
-  static getHeight(BuildContext context) => MediaQuery.of(context).size.height;
-  static getWidth(BuildContext context) => MediaQuery.of(context).size.width;
-}
-
 class UIC {
-  static Color text1 = Colors.black87;
-  static Color text2 = Colors.black54; //const Color(0XFFB6B6B6);
-  static Color background = const Color(0xFFF3F8FE);
+  static Color text1 = const Color(0XFF6B6B6B);
+  static Color text2 = const Color(0XFFB6B6B6);
+  static Color background = const Color(0xFFF1F5FE);
   static Color button = const Color(0xFF3E4685);
   static Color white = const Color(0XFFFEFEFE);
+  static Color boxShadow = Colors.black.withOpacity(0.2);
+  static Color containerBackground = const Color(0xFFE5E8F9);
 
   static final Color randomColor =
       Colors.primaries[Random().nextInt(Colors.primaries.length)];
 }
 
-class BorderRai {
+const edgeInsetsAll = EdgeInsets.all(20.0);
+const edgeInsetsOnly = EdgeInsets.symmetric(horizontal: 20, vertical: 8);
+
+class BORDERRADIUS {
   static const bRedius40 = BorderRadius.only(
       bottomLeft: Radius.circular(40.0), bottomRight: Radius.circular(40.0));
 
@@ -196,6 +196,12 @@ class Constants {
       blurRadius: 19,
       spreadRadius: 0,
     )
+  ];
+  static List<BoxShadow> boxShadow2 = [
+    BoxShadow(
+      color: UIC.boxShadow,
+      blurRadius: 10.0,
+    ),
   ];
   static List<BoxShadow> boxShadowProduct = [
     const BoxShadow(
